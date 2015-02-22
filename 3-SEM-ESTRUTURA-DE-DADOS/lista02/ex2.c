@@ -67,13 +67,13 @@ int main()
 
 			/* Verifica qual operação deve ser feita */
 			if(expr[i] == '+')
-				empilha(pExpr, num1 + num2);
+				empilha(pExpr, num2 + num1);
 			else if(expr[i] == '-')
-				empilha(pExpr, num1 - num2);
+				empilha(pExpr, num2 - num1);
 			else if(expr[i] == '*')
-				empilha(pExpr, num1 * num2);
+				empilha(pExpr, num2 * num1);
 			else if(expr[i] == '/')
-				empilha(pExpr, num1 / num2);
+				empilha(pExpr, num2 / num1);
 		}
 		/* Caso seja um separador */
 		else

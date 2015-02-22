@@ -19,7 +19,7 @@
 	
 	FORMATO DA STRING "NUM NUM NUM NUM OPERADOR OPERADOR OPERADOR" ENTRE OS OPERADORES NÃO PODE HAVER ESPAÇO
 */
-	
+
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <string.h>
@@ -67,13 +67,13 @@ int main()
 
 			/* Verifica qual operação deve ser feita */
 			if(expr[i] == '+')
-				empilha(pExpr, num1 + num2);
+				empilha(pExpr, num2 + num1);
 			else if(expr[i] == '-')
-				empilha(pExpr, num1 - num2);
+				empilha(pExpr, num2 - num1);
 			else if(expr[i] == '*')
-				empilha(pExpr, num1 * num2);
+				empilha(pExpr, num2 * num1);
 			else if(expr[i] == '/')
-				empilha(pExpr, num1 / num2);
+				empilha(pExpr, num2 / num1);
 		}
 		/* Caso seja um separador */
 		else
